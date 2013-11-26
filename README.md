@@ -9,11 +9,30 @@ Ex.
 $(mySelector)
   .css("color", "blue")
   .if(someCondition)
-  .css("background", "red")
+    .css("background", "red")
   .else()
-  .css("background", "orange")
+    .css("background", "orange")
   .fi()
   .css("font-size", "22px");
 ```
+
+The plugin also supports nesting of if statements:
+
+```javascript
+$(mySelector)
+  .css("color", "blue")
+  .if(someCondition)
+    .css("background", "red")
+    .if(anotherCondition)
+      .text("Yep")
+    .else()
+      .text("Nop")
+    .fi()
+  .else()
+    .css("background", "orange")
+  .fi()
+  .css("font-size", "22px");
+```
+
 
 Enjoy!
