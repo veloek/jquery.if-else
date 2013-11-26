@@ -16,7 +16,7 @@ $(mySelector)
   .css("font-size", "22px");
 ```
 
-The plugin also supports nesting of if statements:
+The plugin also supports nesting of if conditions:
 
 ```javascript
 $(mySelector)
