@@ -9,7 +9,7 @@
  * @version 0.1
  * @licence MIT
  */
-(function( $ ) {
+;(function( $ ) {
 
     /* Undef object that all chained jQuery methods work on
      * if they should not be executed */
