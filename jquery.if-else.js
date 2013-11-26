@@ -6,7 +6,7 @@
  * 
  * @author Vegard Løkken <vegard@headspin.no>
  * @copyright 2013
- * @version 0.2
+ * @version 0.3
  * @licence MIT
  */
 ;(function( $ ) {
@@ -19,28 +19,23 @@
      * it later */
     var orig;
 
-    /* We store the condition given in the if() method */
-    var condition;
-
-    $.fn["if"] = function(options) {
-        orig = this;
-        condition = !!options;
-
-        if (!condition) {
-            return $undef;
+    $.fn["if"] = function(condition) {
+        if (this === $undef) {
+            return $();
         } else {
-            return this;
+            orig = this;
+            return !!condition ? this : $undef;
         }
     };
 
-    $.fn["else"] = function( options) {
+    $.fn["else"] = function() {
         if (orig === undefined)
             throw "else() can't be used before if()";
 
         return this === $undef ? orig : $undef;
     };
 
-    $.fn["fi"] = function(options) {
+    $.fn["fi"] = function() {
         if (orig === undefined)
             throw "fi() can't be used before if()";
 
