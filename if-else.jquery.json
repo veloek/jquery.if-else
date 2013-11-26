@@ -7,7 +7,7 @@
         "else",
         "if-else"
     ],
-    "version": "0.3.1",
+    "version": "0.3.2",
     "author": {
         "name": "Vegard Løkken"
     },
@@ -18,7 +18,7 @@
         }
     ],
     "homepage": "https://github.com/veloek/jquery.if-else",
-    "download": "https://github.com/veloek/jquery.if-else/archive/0.3.0.zip",
+    "download": "https://github.com/veloek/jquery.if-else/archive/0.3.2.zip",
     "dependencies": {
         "jquery": ">=1.5"
     }
