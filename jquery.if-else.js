@@ -6,7 +6,7 @@
  * 
  * @author Vegard Løkken <vegard@headspin.no>
  * @copyright 2013
- * @version 0.1
+ * @version 0.2
  * @licence MIT
  */
 ;(function( $ ) {
@@ -44,10 +44,7 @@
         if (orig === undefined)
             throw "fi() can't be used before if()";
 
-        var toReturn = orig;
-        orig = undefined;
-
-        return toReturn;
+        return orig;
     };
 
 })(jQuery);
