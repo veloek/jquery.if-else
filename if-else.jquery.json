@@ -1,0 +1,25 @@
+{
+    "name": "if-else",
+    "title": "Adding if(), else() and fi() methods",
+    "description": "Extending jQuery chains with if(), else() and fi() methods",
+    "keywords": [
+        "if",
+        "else",
+        "if-else"
+    ],
+    "version": "0.3.0",
+    "author": {
+        "name": "Vegard Løkken"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/veloek/jquery.if-else/blob/master/LICENSE"
+        }
+    ],
+    "homepage": "https://github.com/veloek/jquery.if-else",
+    "download": "https://github.com/veloek/jquery.if-else",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
