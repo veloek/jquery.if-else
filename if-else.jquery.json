@@ -18,7 +18,7 @@
         }
     ],
     "homepage": "https://github.com/veloek/jquery.if-else",
-    "download": "https://github.com/veloek/jquery.if-else",
+    "download": "https://github.com/veloek/jquery.if-else/archive/0.3.0.zip",
     "dependencies": {
         "jquery": ">=1.5"
     }
