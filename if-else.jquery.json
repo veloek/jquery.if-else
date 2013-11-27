@@ -1,13 +1,14 @@
 {
     "name": "if-else",
-    "title": "Adding if(), else() and fi() methods",
-    "description": "Extending jQuery chains with if(), else() and fi() methods",
+    "title": "Adding if(), else(), elif() and fi() methods",
+    "description": "Extending jQuery chains with if(), else(), elif() and fi() methods to make it easier to write clean and readable code. It supports nesting.",
     "keywords": [
         "if",
         "else",
+	"elif",
         "if-else"
     ],
-    "version": "0.3.2",
+    "version": "0.4.0",
     "author": {
         "name": "Vegard Løkken"
     },
@@ -18,7 +19,7 @@
         }
     ],
     "homepage": "https://github.com/veloek/jquery.if-else",
-    "download": "https://github.com/veloek/jquery.if-else/archive/0.3.2.zip",
+    "download": "https://github.com/veloek/jquery.if-else/archive/0.4.0.zip",
     "dependencies": {
         "jquery": ">=1.5"
     }

@@ -6,7 +6,7 @@
  * 
  * @author Vegard Løkken <vegard@headspin.no>
  * @copyright 2013
- * @version 0.3
+ * @version 0.4
  * @licence MIT
  */
 ;(function( $ ) {
@@ -24,22 +24,20 @@
             return $();
         } else {
             orig = this;
-            return !!condition ? this : $undef;
+            return !!condition ? orig : $undef;
         }
     };
 
-    $.fn["else"] = function() {
-        if (orig === undefined)
-            throw "else() can't be used before if()";
+    $.fn["elif"] = function(condition) {
+        return this.else().if(condition);
+    };
 
-        return this === $undef ? orig : $undef;
+    $.fn["else"] = function() {
+        return this === $undef ? orig || this : $undef;
     };
 
     $.fn["fi"] = function() {
-        if (orig === undefined)
-            throw "fi() can't be used before if()";
-
-        return orig;
+        return orig || this;
     };
 
 })(jQuery);
