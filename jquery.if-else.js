@@ -1,12 +1,12 @@
 /**
  * jQuery if-else plugin
  *
- * Creates if(), else() and fi() methods that can be used in
+ * Creates if(), else(), elif() and fi() methods that can be used in
  * a chain of methods on jQuery objects
  * 
  * @author Vegard Løkken <vegard@headspin.no>
  * @copyright 2013
- * @version 0.4
+ * @version 0.5.0
  * @licence MIT
  */
 ;(function( $ ) {
@@ -33,7 +33,8 @@
     };
 
     $.fn["else"] = function() {
-        return this === $undef ? orig || this : $undef;
+        return (this === $undef || this.prevObject === $undef) ?
+	    (orig || this) : $undef;
     };
 
     $.fn["fi"] = function() {

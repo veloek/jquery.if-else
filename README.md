@@ -1,7 +1,7 @@
 jquery.if-else
 ==============
 
-When using chained function calls in jQuery, it happens that you only want some of the functions to be called under specific conditions. With this plugin, you can use if(), else() and fi() to accomplish this.
+When using chained function calls in jQuery, it happens that you only want some of the functions to be called under specific conditions. With this plugin, you can use if(), else(), elif() and fi() to accomplish this.
 
 Ex.
 --
